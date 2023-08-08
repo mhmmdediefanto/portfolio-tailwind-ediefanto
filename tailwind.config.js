@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     fontFamily: {
       'Montserrat': ["Montserrat"],
-      'DaysOne' : ['Days One']
+      'DaysOne' : ['Days One'],
+      'Pacifico' : ['Pacifico']
     },
     container: {
       center: true,
