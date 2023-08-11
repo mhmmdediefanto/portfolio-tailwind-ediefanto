@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["index.html"],
+  darkMode: "class",
   theme: {
     fontFamily: {
-      'Montserrat': ["Montserrat"],
-      'DaysOne' : ['Days One'],
-      'Pacifico' : ['Pacifico']
+      Montserrat: ["Montserrat"],
+      DaysOne: ["Days One"],
+      Pacifico: ["Pacifico"],
     },
     container: {
       center: true,

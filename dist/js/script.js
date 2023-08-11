@@ -5,24 +5,31 @@ window.onscroll = function () {
   const rocket = document.getElementById("rocket");
   const fixedNav = header.offsetTop;
   if (window.pageYOffset > fixedNav) {
-    mouse.style.display='none'
+    mouse.style.display = "none";
     header.classList.add("navbar-fixed");
-    rocket.classList.remove('hidden')
+    rocket.classList.remove("hidden");
   } else {
     header.classList.remove("navbar-fixed");
-    mouse.style.display = 'block'
-    rocket.classList.add('hidden')
+    mouse.style.display = "block";
+    rocket.classList.add("hidden");
   }
 };
 
 // hamburger
 const hamburger = document.getElementById("hamburger");
-// nav-menu
 const navMenu = document.getElementById("nav-menu");
 
 hamburger.addEventListener("click", function () {
   hamburger.classList.toggle("hamburger-active");
   navMenu.classList.toggle("hidden");
+});
+
+// klik luar hamburger
+window.addEventListener("click", function (e) {
+  if (e.target != hamburger && e.target != navMenu) {
+    hamburger.classList.remove("hamburger-active");
+    navMenu.classList.add("hidden");
+  }
 });
 
 // active skills
@@ -51,4 +58,23 @@ skillsContent.forEach((element) => {
       }
     }
   });
+});
+
+// dark mode
+const darkToggle = document.querySelector("#dark-toggle");
+const html = document.querySelector("html");
+let dark = document.getElementById("dark");
+
+darkToggle.addEventListener("click", function () {
+  if (darkToggle.checked) {
+    dark.classList.remove('bi-moon-stars-fill')
+    dark.classList.add('bi-brightness-high-fill')
+    dark.style.color = 'white'
+    html.classList.add("dark");
+  } else {
+    dark.classList.add('bi-moon-stars-fill')
+    dark.classList.remove('bi-brightness-high-fill')
+    dark.style.color = 'black'
+    html.classList.remove("dark");
+  }
 });

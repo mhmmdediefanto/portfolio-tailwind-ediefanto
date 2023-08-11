@@ -45,14 +45,14 @@
 
             <nav
               id="nav-menu"
-              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-Montserrat"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none font-Montserrat dark:bg-slate-800 dark:shadow-slate-500"
             >
               <ul class="block lg:flex lg:text-lg">
                 <li class="group">
                   <a
                     href="#home"
                     id=""
-                    class="text-lg py-2 mx-8 flex text-dark group-hover:text-primary lg:text-lg"
+                    class="text-lg py-2 mx-8 flex text-dark group-hover:text-primary lg:text-lg dark:text-white"
                     >Beranda</a
                   >
                 </li>
@@ -60,7 +60,7 @@
                   <a
                     href="#about"
                     id=""
-                    class="text-lg py-2 mx-8 flex text-dark group-hover:text-primary lg:text-lg"
+                    class="text-lg py-2 mx-8 flex text-dark group-hover:text-primary lg:text-lg dark:text-white"
                     >About</a
                   >
                 </li>
@@ -68,7 +68,7 @@
                   <a
                     href="#skills"
                     id=""
-                    class="text-lg py-2 mx-8 flex text-dark group-hover:text-primary lg:text-lg"
+                    class="text-lg py-2 mx-8 flex text-dark group-hover:text-primary lg:text-lg dark:text-white"
                     >Skills</a
                   >
                 </li>
@@ -76,7 +76,7 @@
                   <a
                     href="#resume"
                     id="#"
-                    class="text-lg py-2 mx-8 flex text-dark group-hover:text-primary lg:text-lg"
+                    class="text-lg py-2 mx-8 flex text-dark group-hover:text-primary lg:text-lg dark:text-white"
                     >Resume</a
                   >
                 </li>
@@ -84,9 +84,24 @@
                   <a
                     href="#contact"
                     id="#"
-                    class="text-lg py-2 mx-8 flex text-dark group-hover:text-primary lg:text-lg"
+                    class="text-lg py-2 mx-8 flex text-dark group-hover:text-primary lg:text-lg dark:text-white"
                     >Contact</a
                   >
+                </li>
+                <li class="flex items-center">
+                  <div class="flex items-center py-2 mx-8">
+                    <input
+                      type="checkbox"
+                      name=""
+                      id="dark-toggle"
+                      class="hidden"
+                    />
+                    <label for="dark-toggle">
+                      <div class="flex">
+                        <i class="bi bi-moon-stars-fill cursor-pointer text-2xl" id="dark" ></i>
+                      </div>
+                    </label>
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -97,7 +112,7 @@
     <!-- header end -->
 
     <!-- hero section start -->
-    <section id="home" class="pt-32">
+    <section id="home" class="pt-32 dark:bg-slate-800">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2" data-aos="fade-up">
@@ -111,7 +126,7 @@
               >
             </h1>
             <h2
-              class="font-medium text-slate-500 text-md mb-3 lg:text-xl font-Montserrat"
+              class="font-medium text-slate-500  text-md mb-3 lg:text-xl font-Montserrat dark:text-slate-400"
             >
               I'm a
               <span
@@ -123,29 +138,29 @@
             <div class="flex items-center mb-8">
               <a href="https://github.com/mhmmdediefanto?tab=repositories"
                 ><i
-                  class="bi bi-github me-1 text-xl rounded-full flex justify-center items-center border border-slate-600 p-2 hover:bg-primary text-slate-600s hover:text-white fill-current lg:text-1xl"
+                  class="bi bi-github me-1 text-xl rounded-full flex justify-center items-center border border-slate-600 p-2 hover:bg-primary text-slate-600s hover:text-white fill-current lg:text-1xl dark:bg-white dark:hover:text-primary"
                 ></i
               ></a>
               <a
                 href="https://instagram.com/mhmmdedfan?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
                 ><i
-                  class="bi bi-instagram me-1 text-xl rounded-full flex justify-center items-center border border-slate-600 p-2 hover:bg-primary text-slate-600s hover:text-white fill-current lg:text-1xl"
+                  class="bi bi-instagram me-1 text-xl rounded-full flex justify-center items-center border border-slate-600 p-2 hover:bg-primary text-slate-600s hover:text-white fill-current lg:text-1xl dark:bg-white dark:hover:text-primary"
                 ></i
               ></a>
               <a href="http://t.me/mhmmdedfan"
                 ><i
-                  class="bi bi-telegram text-xl me-1 rounded-full flex justify-center items-center border border-slate-600 p-2 hover:bg-primary text-slate-600s hover:text-white fill-current lg:text-1xl"
+                  class="bi bi-telegram text-xl me-1 rounded-full flex justify-center items-center border border-slate-600 p-2 hover:bg-primary text-slate-600s hover:text-white fill-current lg:text-1xl dark:bg-white dark:hover:text-primary"
                 ></i
               ></a>
               <a href="https://www.facebook.com/edi.efanto.3?mibextid=ZbWKwL"
                 ><i
-                  class="bi bi-facebook text-xl me-1 rounded-full flex justify-center items-center border border-slate-600 p-2 hover:bg-primary text-slate-600s hover:text-white fill-current lg:text-1xl"
+                  class="bi bi-facebook text-xl me-1 rounded-full flex justify-center items-center border border-slate-600 p-2 hover:bg-primary text-slate-600s hover:text-white fill-current lg:text-1xl dark:bg-white dark:hover:text-primary"
                 ></i
               ></a>
               <a
                 href="https://www.linkedin.com/in/mhmmdedfan778?trk=contact-info"
                 ><i
-                  class="bi bi-linkedin text-xl me-1 rounded-full flex justify-center items-center border border-slate-600 p-2 hover:bg-primary text-slate-600s hover:text-white fill-current lg:text-1xl"
+                  class="bi bi-linkedin text-xl me-1 rounded-full flex justify-center items-center border border-slate-600 p-2 hover:bg-primary text-slate-600s hover:text-white fill-current lg:text-1xl dark:bg-white dark:hover:text-primary"
                 ></i
               ></a>
             </div>
@@ -185,11 +200,11 @@
     <!-- hero section end -->
 
     <!-- about section start -->
-    <section class="pt-30 pb-15 bg-primary">
+    <section class="pt-30 pb-15 bg-primary ">
       <div class="container">
         <div class="w-full flex justify-center mb-14 px-4">
           <h2
-            class="font-bold text-2xl lg:text-4xl text-white font-Montserrat"
+            class="font-bold text-2xl lg:text-4xl text-white font-Montserrat dark:text-dark"
             id="about"
             data-aos="fade-up"
           >
@@ -213,16 +228,16 @@
           </div>
           <div class="w-full px-4 pt-10 mb-10 lg:w-1/2 lg:pt-0">
             <h3
-              class="font-bold text-white text-2xl mb-2 font-Montserrat"
+              class="font-bold text-white text-2xl mb-2 font-Montserrat dark:text-dark"
               data-aos="fade-up"
             >
               Hello Everyone,👋
             </h3>
             <p
-              class="text-white text-lg lg:text-1xl font-Montserrat text-justify"
+              class="text-white text-lg lg:text-1xl font-Montserrat text-justify dark:text-dark"
               data-aos="fade-up"
             >
-              My name is Muhammad Ediefanto. I am a Beck end Developer. Software
+              My name is <span class="text-violet-800 ">Muhammad Ediefanto</span> . I am a Beck end Developer. Software
               Engineer Enthusiast. My passion in programming is very high, I
               like to learn about new technologies. I am still a fresh graduate
               in the Beck end Developer field, but I have good skills . I have
@@ -242,7 +257,7 @@
     <!-- about section end -->
 
     <!-- Skills Section start -->
-    <section class="">
+    <section class="dark:bg-slate-800">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#14b8a6"
@@ -252,7 +267,7 @@
       </svg>
       <div id="skills" class="container flex flex-col my-14">
         <h1
-          class="text-2xl lg:text-4xl text-primary font-Montserrat font-bold text-center mb-16"
+          class="text-2xl lg:text-4xl text-primary font-Montserrat font-bold text-center mb-16 "
           data-aos="fade-up"
         >
           Skills
@@ -260,17 +275,17 @@
         <div class="lg:flex flex-wrap w-full justify-center">
           <div
             id="scrolling-content"
-            class="flex overflow-x-scroll lg:w-3/4 p-3 font-Montserrat"
+            class="flex overflow-x-scroll lg:w-3/4 p-3 font-Montserrat dark:text-white"
             data-aos="fade-down"
           >
             <div
-              class="text-lg pb-3 h-7 lg:text-lg lg:w-72 px-4 flex-shrink-0 cursor-pointer activeSkills"
+              class="text-lg pb-3 h-7 lg:text-lg lg:w-72 px-4 flex-shrink-0 cursor-pointer activeSkills "
               data-target="#language"
             >
               Language
             </div>
             <div
-              class="text-lg pb-3 h-7 lg:text-lg lg:w-72 px-4 flex-shrink-0 cursor-pointer"
+              class="text-lg pb-3 h-7 lg:text-lg lg:w-72 px-4 flex-shrink-0 cursor-pointer  "
               data-target="#frameworkLibrary"
             >
               Framework/Library
@@ -282,13 +297,13 @@
               UI Framework/Components
             </div>
             <div
-              class="text-lg pb-3 h-7 lg:text-lg lg:w-72 px-4 flex-shrink-0 cursor-pointer"
+              class="text-lg pb-3 h-7 lg:text-lg lg:w-72 px-4 flex-shrink-0 cursor-pointer  "
               data-target="#dbms"
             >
               DBMS
             </div>
             <div
-              class="text-lg pb-3 h-7 lg:text-lg lg:w-72 px-4 flex-shrink-0 cursor-pointer"
+              class="text-lg pb-3 h-7 lg:text-lg lg:w-72 px-4 flex-shrink-0 cursor-pointer  "
               data-target="#opeartingSystem"
             >
               Operating System
@@ -695,7 +710,7 @@
       <div class="container" id="resume">
         <div class="w-full flex justify-center px-4 mb-14">
           <h2
-            class="text-white font-Montserrat text-2xl font-bold"
+            class="text-white font-Montserrat text-2xl font-bold dark:text-dark"
             data-aos="fade-up"
           >
             Resume
@@ -807,7 +822,7 @@
     <!-- Resume section end -->
 
     <!-- Project section start -->
-    <section class="pt-22" id="project">
+    <section class="pt-22 dark:bg-slate-800" id="project">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#14b8a6"
@@ -825,10 +840,13 @@
           </h2>
         </div>
         <div class="w-full lg:w-9/12 flex mb-7">
-          <p class="border-b-2 border-dark" data-aos="fade-up">Website</p>
+          <p class="border-b-2 border-dark dark:text-white dark:border-white dark:border-b-2" data-aos="fade-up">Website</p>
         </div>
         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
-          <div class="relative flex flex-col items-center group " data-aos="fade-up">
+          <div
+            class="relative flex flex-col items-center group"
+            data-aos="fade-up"
+          >
             <div
               class="w-full max-w-md rounded-xl overflow-hidden hover:ring-2 hover:ring-primary"
             >
@@ -842,14 +860,14 @@
               class="absolute w-full h-full items-center rounded-xl overflow-hidden hidden mb-6 group-hover:flex hover:ring-2 hover:ring-primary"
             >
               <div
-                class="relative z-10 p-1 text-xs leading-none whitespace-no-wrap bg-white transition duration-1000 ease-in-out opacity-95 shadow-lg w-full h-full"
+                class="relative z-10 p-1 text-xs leading-none whitespace-no-wrap bg-white dark:bg-slate-700 transition duration-1000 ease-in-out opacity-95 shadow-lg w-full h-full"
               >
                 <p
-                  class="text-slate-800 flex justify-center font-bold font-Montserrat  text-lg"
+                  class="text-slate-800 flex dark:text-white justify-center font-bold font-Montserrat text-lg xl:text-2xl"
                 >
                   Web Portfolio
                 </p>
-                <p class="text-center text-md font-Montserrat mb-2">
+                <p class="text-center text-md font-Montserrat mb-2 dark:text-white">
                   a portfolio website, using with
                 </p>
                 <div class="flex gap-2 px-4 justify-center font-bold mb-1">
@@ -871,10 +889,20 @@
                 </div>
                 <div class="flex flex-col justify-center gap-1">
                   <div class="flex justify-center">
-                    <a href="https://github.com/mhmmdediefanto/mhmmdedfan.github.io" class="font-Montserrat bg-violet-900 text-white px-6 py-2 rounded-md hover:bg-violet-700 active:bg-violet-600" > <i class="bi bi-github"></i> Open in github</a>
+                    <a
+                      href="https://github.com/mhmmdediefanto/mhmmdedfan.github.io"
+                      class="font-Montserrat bg-violet-900 text-white px-6 py-2 rounded-md hover:bg-violet-700 active:bg-violet-600"
+                    >
+                      <i class="bi bi-github"></i> Open in github</a
+                    >
                   </div>
                   <div class="flex justify-center">
-                    <a href="https://mhmmdediefanto.github.io/mhmmdedfan.github.io/" class="font-Montserrat bg-violet-900 text-white px-6 py-2 rounded-md hover:bg-violet-700 active:bg-violet-600" > Live Priview</a>
+                    <a
+                      href="https://mhmmdediefanto.github.io/mhmmdedfan.github.io/"
+                      class="font-Montserrat bg-violet-900 text-white px-6 py-2 rounded-md hover:bg-violet-700 active:bg-violet-600"
+                    >
+                      Live Priview</a
+                    >
                   </div>
                 </div>
               </div>
@@ -882,11 +910,6 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- Project section end -->
-
-    <!-- Contact section start -->
-    <section class="pt-22" id="contact">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#14b8a6"
@@ -894,11 +917,16 @@
           d="M0,128L40,106.7C80,85,160,43,240,53.3C320,64,400,128,480,144C560,160,640,128,720,117.3C800,107,880,117,960,144C1040,171,1120,213,1200,197.3C1280,181,1360,107,1400,69.3L1440,32L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
         ></path>
       </svg>
+    </section>
+    <!-- Project section end -->
+
+    <!-- Contact section start -->
+    <section class="pt-22" id="contact">
       <div class="bg-primary px-4 pb-10">
         <div class="container flex flex-wrap lg:w-3/4">
           <div class="w-full">
             <h2
-              class="text-white font-Montserrat text-2xl font-bold text-center mb-10"
+              class="text-white font-Montserrat text-2xl font-bold text-center mb-10 dark:text-dark"
               data-aos="fade-up"
             >
               Contact
@@ -949,12 +977,12 @@
             >
               <input
                 type="text"
-                class="w-full text-sm block rounded-lg h-14 px-3 border border-collapse border-slate-400"
+                class="w-full text-sm block rounded-lg h-14 px-3 border border-collapse border-slate-400 dark:bg-slate-800 dark:text-white"
                 placeholder="Name"
               />
               <input
                 type="text"
-                class="w-full text-sm block rounded-lg h-14 px-3 border border-collapse border-slate-400"
+                class="w-full text-sm block rounded-lg h-14 px-3 border border-collapse border-slate-400 dark:bg-slate-800 dark:text-white"
                 placeholder="Email"
               />
               <textarea
@@ -962,7 +990,7 @@
                 id=""
                 cols="30"
                 rows="10"
-                class="w-full h-20 rounded-lg text-sm px-3 pt-1 border border-collapse border-slate-400"
+                class="w-full h-20 rounded-lg text-sm px-3 pt-1 border border-collapse border-slate-400 dark:bg-slate-800 dark:text-white"
                 placeholder="Message"
               ></textarea>
               <button
