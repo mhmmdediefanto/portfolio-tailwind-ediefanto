@@ -64,17 +64,20 @@ skillsContent.forEach((element) => {
 const darkToggle = document.querySelector("#dark-toggle");
 const html = document.querySelector("html");
 let dark = document.getElementById("dark");
+let modeTheme = document.getElementById("modeTheme");
 
 darkToggle.addEventListener("click", function () {
   if (darkToggle.checked) {
     dark.classList.remove('bi-moon-stars-fill')
     dark.classList.add('bi-brightness-high-fill')
     dark.style.color = 'white'
+    modeTheme.innerHTML = 'Light Mode'
     html.classList.add("dark");
   } else {
     dark.classList.add('bi-moon-stars-fill')
     dark.classList.remove('bi-brightness-high-fill')
     dark.style.color = 'black'
+    modeTheme.innerHTML = 'Dark Mode'
     html.classList.remove("dark");
   }
 });
