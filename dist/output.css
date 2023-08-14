@@ -735,11 +735,6 @@ video {
   margin-top: 0.75rem;
 }
 
-.ms-3{
-  -webkit-margin-start: 0.75rem;
-          margin-inline-start: 0.75rem;
-}
-
 .block{
   display: block;
 }
@@ -1901,6 +1896,10 @@ video {
 }
 
 @media (min-width: 1280px){
+  .xl\:w-4\/6{
+    width: 66.666667%;
+  }
+
   .xl\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
